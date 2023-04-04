@@ -1,0 +1,106 @@
+@media only screen and (max-width: 7000px){
+
+	.iframe {
+    margin:auto; 
+    height: 600px;
+    width: 1000px;
+    display: block;
+    border-width:0px;
+
+  }
+}
+
+@media only screen and (max-width: 1690px){
+  .iframe {
+    margin:auto; 
+    height: 600px;
+    width: 1000px;
+    display: block;
+    border-width:0px;
+  }
+
+}
+
+@media only screen and (max-width: 1600px){
+
+  .iframe {
+    margin:auto; 
+    height: 600px;
+    width: 1000px;
+    display: block;
+    border-width:0px;
+  }
+
+}
+
+@media only screen and (max-width: 1199px){
+
+  .iframe {
+    margin:auto; 
+    height: 600px;
+    width: 1000px;
+    display: block;
+    border-width:0px;
+  }
+	
+}
+
+@media only screen and (max-width: 1139px){
+
+  .iframe {
+    margin:auto; 
+    height: 500px;
+    width: 900px;
+    display: block;
+    border-width:0px;
+  }
+
+  table tr th:first-child, table tr td:first-child {
+    width: 300px;
+ 
+}
+
+	
+}
+
+@media only screen and (max-width: 991px){
+
+  .iframe {
+    margin:auto; 
+    height: 400px;
+    width: 400px;
+    display: block;
+    border-width:0px;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+  .iframe {
+    margin:auto; 
+    height: 600px;
+    width: 700px;
+    display: block;
+    border-width:0px;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 575px){	
+  .iframe {
+    margin:auto; 
+    height: 400px;
+    width: 400px;
+    display: block;
+    border-width:0px;
+  }
+}
+
+
+
+

@@ -1,0 +1,212 @@
+
+{% extends "header.html" %}
+
+{% block estadisticas %} 
+
+  
+       
+
+        <div class="container ">
+            <div class="p-4">
+                <div class="one">
+                    <h1>RESUMEN PROYECTO</h1>
+                </div>
+                <div class="row d-flex justify-content-center ">
+                <div class="p-4 shadow bg-white rounded boxcontainer col-lg-8 " style="display: flex !important;">
+                <iframe class='iframe' src="{{ url_for('frame') }}" > </iframe>
+               </div>
+          
+               <div class="bg-white  boxcontainer col">
+                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                        <div class="small pt-0 text-center">Municipios</div>
+                        <div class="row d-flex justify-content-center">
+                            <img class="icon" src="static/images/city.png"></img>
+                            <div id='municipios' class="large pl-3"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                        <div class="small pt-0 text-center">Familias</div>
+                        <div class="row d-flex justify-content-center">
+                            <img class="icon" src="static/images/juventud.png"></img>
+                            <div id='familias' class="large pl-3"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                        <div class="small pt-0 text-center">Hectareas</div>
+                        <div class="row d-flex justify-content-center">
+                            <img class="icon" src="static/images/tierra.png"></img>
+                            <div id='hectareas' class="large pl-3"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                        <div class="small pt-0 text-center">Meses</div>
+                        <div class="row d-flex justify-content-center">
+                            <img class="icon" src="static/images/reloj.png"></img>
+                            <div id='duracion' class="large pl-3"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+              
+               
+            </div>
+
+
+       
+
+
+
+                    <div class="row d-flex justify-content-center ">
+                        <div class="p-4 shadow bg-white rounded boxcontainer col-lg-7 ">
+                            <h2>Porcentajes</h2>
+                            <div id="chart"></div>
+                        </div>
+
+                        <div class="p-4 shadow bg-white rounded boxcontainer
+                            col-lg-4">
+                            <div class="row justify-content-center">
+                            <h2>Personas por <br>municipios</h2>
+                            <div class=" table-responsive ">
+                                <table class="table table-borderless
+                                    report-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-muted">Luruaco</td>
+                                            <td class="w-100 px-0">
+                                                <div class="progress progress-md
+                                                    mx-4">
+                                                    <div id="Bar" class="progress-bar
+                                                        bg-dark" role="progressbar" style="width: 0%"
+                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="50"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5 id="pluruaco" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Candelaria</td>
+                                            <td class="w-100 px-0">
+                                                <div class="progress progress-md
+                                                    mx-4">
+                                                    <div id="Bar2" class="progress-bar
+                                                        bg-primary" role="progressbar" style="width: 0%"
+                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="50"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5 id="pcandelaria" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Ponedera</td>
+                                            <td class="w-100 px-0">
+                                                <div class="progress progress-md
+                                                    mx-4">
+                                                    <div id="Bar3" class="progress-bar
+                                                        bg-yellow" role="progressbar" style="width: 0%"
+                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="50"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5 id="pponedera" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Santo Tomás</td>
+
+                                            <td class="w-100 px-0">
+                                                <span class="NameHighlights">
+                                                    <div class="progress progress-md
+                                                        mx-4">
+
+                                                        <div id="Bar4" class="progress-bar
+                                                            bg-red" role="progressbar" style="width: 0%"
+                                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="50">
+                                                        </div>
+                                                        <p>
+                                                            # of Votes: 123<br>
+                                                            % Liked<br>
+                                                            <a href="product review link">See User reviews</a>
+                                                        </p>
+
+                                                    </div>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <h5 id="psantotomas" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Sabanagrande</td>
+                                            <td class="w-100 px-0">
+                                                <div class="progress progress-md
+                                                    mx-4">
+                                                    <div id="Bar5" class="progress-bar
+                                                        bg-success" role="progressbar" style="width: 0%"
+                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="50"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5 id="psabanagrande" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted">Manatí</td>
+                                            <td class="w-100 px-0">
+                                                <div class="progress progress-md
+                                                    mx-4">
+                                                    <div id="Bar6" class="progress-bar
+                                                        bg-blue" role="progressbar" style="width: 0%"
+                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="50"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5 id="pmanati" class="font-weight-bold
+                                                    mb-0"></h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+
+   
+
+        </div>
+
+    </body>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js.map"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/popper.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+    
+    
+    </html>
+
+    {% endblock %}
