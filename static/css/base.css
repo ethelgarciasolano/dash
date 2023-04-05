@@ -1,7 +1,9 @@
 
 
 
-
+#searchItem{
+  min-width: 220px;
+}
 .NameHighlights {
   position:relative;
 }
@@ -44,8 +46,12 @@
   min-width: 200px;
 }
 
+.boxcontaineract{
+  min-width: 200px;
+}
+
 .container{
-  margin-top: 3px;
+  margin-top: 52px;
   margin-bottom: 3px;
 }
 /* === BASE HEADING === */ 
