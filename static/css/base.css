@@ -39,9 +39,12 @@
 
 .boxcontainer{
   margin: 8px;
+  min-width: 200px;
+}
 
-
- 
+.container{
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 /* === BASE HEADING === */ 
 

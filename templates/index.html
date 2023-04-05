@@ -11,13 +11,14 @@
                 <div class="one">
                     <h1>RESUMEN PROYECTO</h1>
                 </div>
-                <div class="row d-flex justify-content-center ">
-                <div class="p-4 shadow bg-white rounded boxcontainer col-lg-8 " style="display: flex !important;">
+                <div class="row d-flex justify-content-center">
+                <div class="p-4 shadow rounded boxcontainer col-lg-8 " style="display: flex !important;">
                 <iframe class='iframe' src="{{ url_for('frame') }}" > </iframe>
                </div>
           
-               <div class="bg-white  boxcontainer col">
-                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+               <div class="  container col">
+                <div class="row">
+                    <div class="p-3 shadow rounded boxcontainer col">
                         <div class="small pt-0 text-center">Municipios</div>
                         <div class="row d-flex justify-content-center">
                             <img class="icon" src="static/images/city.png"></img>
@@ -26,7 +27,7 @@
                         </div>
 
                     </div>
-                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                    <div class="pt-3 pb-3 shadow rounded boxcontainer col">
                         <div class="small pt-0 text-center">Familias</div>
                         <div class="row d-flex justify-content-center">
                             <img class="icon" src="static/images/juventud.png"></img>
@@ -35,7 +36,7 @@
                         </div>
 
                     </div>
-                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                    <div class="pt-3 pb-3 shadow rounded boxcontainer col">
                         <div class="small pt-0 text-center">Hectareas</div>
                         <div class="row d-flex justify-content-center">
                             <img class="icon" src="static/images/tierra.png"></img>
@@ -44,7 +45,7 @@
                         </div>
 
                     </div>
-                    <div class="p-3 shadow bg-white rounded boxcontainer col">
+                    <div class="pt-3 pb-3 shadow  rounded boxcontainer col">
                         <div class="small pt-0 text-center">Meses</div>
                         <div class="row d-flex justify-content-center">
                             <img class="icon" src="static/images/reloj.png"></img>
@@ -54,23 +55,25 @@
 
                     </div>
                 </div>
+            </div>
               
                
             </div>
 
 
        
-
-
+   
 
                     <div class="row d-flex justify-content-center ">
-                        <div class="p-4 shadow bg-white rounded boxcontainer col-lg-7 ">
+                        
+                        <div class="p-4 shadow rounded boxcontainer col-lg-7 " style="display: flex !important; ">
+                            <div class="col justify-content-center">
                             <h2>Porcentajes</h2>
                             <div id="chart"></div>
                         </div>
+                        </div>
 
-                        <div class="p-4 shadow bg-white rounded boxcontainer
-                            col-lg-4">
+                        <div class="p-4 shadow rounded boxcontainer col-lg-4" style="display: flex !important;">
                             <div class="row justify-content-center">
                             <h2>Personas por <br>municipios</h2>
                             <div class=" table-responsive ">
@@ -184,6 +187,7 @@
                         </div>
                         </div>
                     </div>
+             
                 </div>
 
                 
