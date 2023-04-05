@@ -72,10 +72,13 @@ def display_choropleth(candidate):
         y=-0.11,
         xanchor="left",
         x=0,
-    )
+    ),
+    paper_bgcolor='rgba(0,0,0,0)',
+    plot_bgcolor='rgba(0,0,0,0)'
    
     
     )
+    fig.update_layout(geo=dict(bgcolor= 'rgba(0,0,0,0)'))
     fig.write_html("file.html")
     f.close()
     return fig
