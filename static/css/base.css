@@ -33,7 +33,9 @@
 
 }
 
-
+.modebar{
+  display: none !important;
+}
 
 /* === BOX === */ 
 

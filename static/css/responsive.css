@@ -101,6 +101,28 @@
   }
 }
 
+@media only screen and (max-width: 475px){	
+  .iframe {
+    margin:auto; 
+    height: 400px;
+    width: 340px;
+    display: block;
+    border-width:0px;
+  }
+}
+
+@media only screen and (max-width: 395px){	
+  .iframe {
+    margin:auto; 
+    height: 400px;
+    width: 270px;
+    display: block;
+    border-width:0px;
+  }
+}
+
+
+
 
 
 

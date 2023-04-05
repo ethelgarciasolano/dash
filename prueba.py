@@ -7,7 +7,8 @@ import pandas as pd
 from geojson_rewind import rewind
 
 app = Dash(__name__)
-
+my_css_url = "/static/css/base.css"
+app.css.append_css({ 'external_url': my_css_url })
 
 app.layout = html.Div([
     html.H4('Polotical candidate voting pool analysis'),
@@ -84,4 +85,5 @@ def display_choropleth(candidate):
     return fig
     
 if __name__ == '__main__':
+  
     app.run()
