@@ -129,10 +129,11 @@ h1 em {
 
 
 
+
 body {
     position: relative;
     overflow-x: hidden;
-    background-color: #CFD8DC;
+    background-color: white;
 
 }
 body,

@@ -84,19 +84,31 @@ switch (selVal) {
 
     }else { view.setZoom(11.3);}
                         break;
+
+    case "Ponedera":
+        map.getView().setCenter(ol.proj.transform([  -74.753333, 10.625111], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        
+        var w = window.innerWidth;
+        if( w>800){
+            view.setZoom(13.6);
+
+    }else { view.setZoom(12.1);}
+                        break;
   
       
                        
 
     case "Sabanagrande":
-        map.getView().setCenter(ol.proj.transform([  -74.774722,  10.649722], 'EPSG:4326', 'EPSG:3857'))
+        map.getView().setCenter(ol.proj.transform([  -74.786111,10.798333], 'EPSG:4326', 'EPSG:3857'))
         var view = map.getView();
   
         var w = window.innerWidth;
         if( w>800){
-            view.setZoom(13);
+            view.setZoom(14);
 
-    }else { view.setZoom(11.3);}
+    }else { view.setZoom(12.8);}
                         break;
  
 

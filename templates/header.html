@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="static/resources/ol-layerswitcher.css">
     <link rel="stylesheet" href="static/resources/qgis2web.css">
     <link rel="stylesheet" href="static/resources/loading.css">
+
 </head>
 
 <body class="bg-light" onload="load()" >
@@ -50,7 +51,7 @@
         <button type="button" id="sidebarCollapse" class="btn
                 btn-primary">
             <i class="fa fa-bars"></i>
-            <span class="sr-only">Toggle Menu</span>
+            <span class="sr-only">Menú</span>
         </button>
     </div>
     <div class="p-4 pt-5"  >
@@ -72,7 +73,7 @@
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
                     class="dropdown-toggle">Contacto</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li><a href="#">Redes Sociales</a></li>
+                    <li><a href="contacto">Redes Sociales</a></li>
                     
                 </ul>
             </li>
@@ -93,5 +94,8 @@
 
 {% block map %}{% endblock %}
 {% block estadisticas %}{% endblock %}
+{% block actividades %}{% endblock %}
+{% block beneficiarios %}{% endblock %}
+{% block mapa %}{% endblock %}
 
 

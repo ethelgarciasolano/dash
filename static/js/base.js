@@ -161,7 +161,21 @@ let  elem4 = document.getElementById("Bar4");
 let  elem5 = document.getElementById("Bar5");
 let  elem6 = document.getElementById("Bar6");
 
+function cerrarV(){
+
+
+   document.getElementById("sidebar").classList.toggle('active');
+  document.getElementById("sidebarMenu").classList.toggle('modal');;
+
+
+}
+
 const load = () => {
+
+  var w = window.innerWidth;
+  if( w<991){
+  cerrarV()}
+
   animate(text1, 0, 6, timecont);
   animate(text2, 0, 60, timecont);
   animate(text3, 0, 60, timecont);

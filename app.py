@@ -51,7 +51,13 @@ def frame():
       
         return render_template( 'index.html')
 
-
+@app.route('/contacto', methods=('GET', 'POST'))
+def contacto():
+    try:
+        return render_template( 'contacto.html')
+    except Exception as ex:
+      
+        return render_template( 'index.html')
 
 if __name__ == '__main__':
     app.run()

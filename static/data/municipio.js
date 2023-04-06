@@ -80,16 +80,16 @@ var json_sabanagrande={
     "type": "FeatureCollection",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Sabanagrande", "Nombre": "Rodrigo Casalins Caro", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.794444, 10.650833, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 2, "Municipio": "Sabanagrande", "Nombre": "Fanny Osorio Tapias", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.753333, 10.651111, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 3, "Municipio": "Sabanagrande", "Nombre": "Domingo Gutiérrez Noriega", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ -74.774722,  10.609722, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 4, "Municipio": "Sabanagrande", "Nombre": "Danny Lugo De Herrera", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ -74.794444, 10.651111,  0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 5, "Municipio": "Sabanagrande", "Nombre": "Kelly Duran Berdejo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ -74.774722, 10.610556, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 6, "Municipio": "Sabanagrande", "Nombre": "Leonardo Caro Fontalvo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.794167,10.651111, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 7, "Municipio": "Sabanagrande", "Nombre": "José Rodriguez Vazquez", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.794444, 10.651315, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 8, "Municipio": "Sabanagrande", "Nombre": "Marco Padilla Martinez", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  ,  0.0] } },
-    { "type": "Feature", "properties": { "OBJECTID": 9, "Municipio": "Sabanagrande", "Nombre": "Adalberto Geovanetty Durán", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -74.795680, 10.632624,0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 10, "Municipio": "Sabanagrande", "Nombre": "Fabiola Mora", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ -74.794444,  10.650437, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Sabanagrande", "Nombre": "Rodrigo Casalins Caro", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.791667,10.786944, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 2, "Municipio": "Sabanagrande", "Nombre": "Fanny Osorio Tapias", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.803889, 10.810556, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 3, "Municipio": "Sabanagrande", "Nombre": "Domingo Gutiérrez Noriega", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ -74.753611, 10.775278, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 4, "Municipio": "Sabanagrande", "Nombre": "Danny Lugo De Herrera", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.766111,10.798333,0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 5, "Municipio": "Sabanagrande", "Nombre": "Kelly Duran Berdejo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.796111,10.811389, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 6, "Municipio": "Sabanagrande", "Nombre": "Leonardo Caro Fontalvo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.790000,10.793056, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 7, "Municipio": "Sabanagrande", "Nombre": "José Rodriguez Vazquez", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [   -74.794444,10.780278, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 8, "Municipio": "Sabanagrande", "Nombre": "Marco Padilla Martinez", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.805833, 10.795278, 0.0] } },
+    { "type": "Feature", "properties": { "OBJECTID": 9, "Municipio": "Sabanagrande", "Nombre": "Adalberto Geovanetty Durán", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -74.792778, 10.808056, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 10, "Municipio": "Sabanagrande", "Nombre": "Fabiola Mora", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.793889, 10.790833, 0.0 ] } },
 
 
 ] };
