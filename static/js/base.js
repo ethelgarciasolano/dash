@@ -167,7 +167,7 @@ const load = () => {
 
   animate(text1, 0, 6, timecont);
   animate(text2, 0, 60, timecont);
-  animate(text3, 0, 60, timecont);
+  animate(text3, 0, 30, timecont);
   animate(text4, 0, 10, timecont);
   animate(text5, 0, 10, timecont);
   animate(text6, 0, 10, timecont);
