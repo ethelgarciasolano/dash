@@ -165,8 +165,6 @@ let  elem6 = document.getElementById("Bar6");
 
 const load = () => {
 
-
-
   animate(text1, 0, 6, timecont);
   animate(text2, 0, 60, timecont);
   animate(text3, 0, 60, timecont);

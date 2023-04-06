@@ -164,11 +164,7 @@ function limpiar() {
 function load(){
 
 
-  document.getElementById("table1").style.height= '0px';
 
-  document.getElementById("table2").style.height= '0px';
- 
-  document.getElementById("table3").style.height= '0px';
 }
 
 
