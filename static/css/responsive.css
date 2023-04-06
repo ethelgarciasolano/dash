@@ -3,7 +3,7 @@
 	.iframe {
     margin:auto; 
     height: 600px;
-    width: 1000px;
+    width: 100%;
     display: block;
     border-width:0px;
 
@@ -14,7 +14,7 @@
   .iframe {
     margin:auto; 
     height: 600px;
-    width: 1000px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -26,7 +26,7 @@
   .iframe {
     margin:auto; 
     height: 600px;
-    width: 1000px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -38,7 +38,7 @@
   .iframe {
     margin:auto; 
     height: 600px;
-    width: 1000px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -50,7 +50,7 @@
   .iframe {
     margin:auto; 
     height: 500px;
-    width: 900px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -68,7 +68,7 @@
   .iframe {
     margin:auto; 
     height: 400px;
-    width: 400px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -81,7 +81,7 @@
   .iframe {
     margin:auto; 
     height: 600px;
-    width: 700px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -95,7 +95,7 @@
   .iframe {
     margin:auto; 
     height: 440px;
-    width: 400px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -111,7 +111,7 @@
   .iframe {
     margin:auto; 
     height: 450px;
-    width: 340px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
@@ -121,7 +121,7 @@
   .iframe {
     margin:auto; 
     height: 470px;
-    width: 270px;
+    width: 100%;
     display: block;
     border-width:0px;
   }
