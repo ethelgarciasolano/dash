@@ -23,7 +23,7 @@ var wms_layers = [];
                         source:jsonSource_COORDENADAS_2, 
                         style: style_COORDENADAS_2,
                         interactive: true,
-                        title: '<img src="./static/images/COORDENADAS_2.png"/> Luruaco'
+                        title: '<img src="./static/images/COORDENADAS_2.png" style="width:15px"/> Luruaco'
                     });
 
                 
@@ -39,7 +39,7 @@ var wms_layers = [];
                         source:jsonSource_COORDENADAS_3, 
                         style: style_COORDENADAS_3,
                         interactive: true,
-                        title: '<img src="./static/images/COORDENADAS_3.png"/> Candelaria'
+                        title: '<img src="./static/images/COORDENADAS_3.png" style="width:15px"/> Candelaria'
                     });
         
 
@@ -56,7 +56,7 @@ var wms_layers = [];
                         source:jsonSource_COORDENADAS_4, 
                         style: style_COORDENADAS_4,
                         interactive: true,
-                        title: '<img src="./static/images/COORDENADAS_4.png"/> Ponedera'
+                        title: '<img src="./static/images/COORDENADAS_4.png" style="width:15px"/> Ponedera'
                     });
                 
 
@@ -72,7 +72,7 @@ var wms_layers = [];
                         source:jsonSource_COORDENADAS_5, 
                         style: style_COORDENADAS_5,
                         interactive: true,
-                        title: '<img src="./static/images/COORDENADAS_5.png"/> Santo tomás'
+                        title: '<img src="./static/images/COORDENADAS_5.png" style="width:15px"/> Santo tomás'
                     });
 
 
@@ -89,7 +89,7 @@ var wms_layers = [];
                         source:jsonSource_COORDENADAS_6, 
                         style: style_COORDENADAS_6,
                         interactive: true,
-                        title: '<img src="./static/images/COORDENADAS_6.png"/> Sabanagrande'
+                        title: '<img src="./static/images/COORDENADAS_6.png" style="width:15px"/> Sabanagrande'
                     });
 
 
@@ -105,7 +105,7 @@ var wms_layers = [];
                                     source:jsonSource_COORDENADAS_7, 
                                     style: style_COORDENADAS_7,
                                     interactive: true,
-                                    title: '<img src="./static/images/COORDENADAS_6.png"/> Manatí'
+                                    title: '<img src="./static/images/COORDENADAS_7.png" style="width:15px"/> Manatí'
                                 });
 lyr_OpenStreetMap_0.setVisible(true);lyr_COORDENADAS_2.setVisible(true);lyr_COORDENADAS_3.setVisible(true);lyr_COORDENADAS_4.setVisible(true);lyr_COORDENADAS_5.setVisible(true);lyr_COORDENADAS_6.setVisible(true);lyr_COORDENADAS_7.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_COORDENADAS_2,lyr_COORDENADAS_3,lyr_COORDENADAS_4,lyr_COORDENADAS_5,lyr_COORDENADAS_6,lyr_COORDENADAS_7]

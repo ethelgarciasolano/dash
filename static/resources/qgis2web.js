@@ -12,12 +12,7 @@ document.getElementById("conflicto").onchange = function(element){
     var selVal  = document.getElementById("conflicto").value
  
 switch (selVal) {
-    case "OpenStreet":
-        var lyr_OpenStreetMap_0 = new ol.source.XYZ({
-             attributions: ' ',
-                url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
-            });
-            break;
+
     case "Google":
                     var lyr_OpenStreetMap_0 = new ol.source.XYZ({
                         attributions: ' ',
@@ -32,12 +27,7 @@ case "Open":
         });
         break;
 
-        case "Noche":
-    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
-        attributions: ' ',
-            url: 'https://api.maptiler.com/maps/toner-v2/{z}/{x}/{y}.png?key=TekgzTaxuD0y03oplKCg'
-        });
-        break;
+
 
 
 
@@ -99,7 +89,7 @@ switch (selVal) {
                        
 
     case "Sabanagrande":
-        map.getView().setCenter(ol.proj.transform([  -74.774722,  10.609722], 'EPSG:4326', 'EPSG:3857'))
+        map.getView().setCenter(ol.proj.transform([  -74.774722,  10.649722], 'EPSG:4326', 'EPSG:3857'))
         var view = map.getView();
   
         var w = window.innerWidth;
@@ -124,8 +114,22 @@ switch (selVal) {
    
                         break;
 
+    case "Santo":
+        map.getView().setCenter(ol.proj.transform([  -74.805556,10.740278], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        var w = window.innerWidth;
+        if( w>800){
+            view.setZoom(13.7);
+
+    }else { view.setZoom(12.3);}
+                        break;
+    
+                       
+                                          
+
                      
-                        
+                       
 
 
                             }

@@ -61,16 +61,16 @@ var json_santotomas={
     "type": "FeatureCollection",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Santo Tomás", "Nombre": "Jhonny Charris Escorcia", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  , 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 2, "Municipio": "Santo Tomás", "Nombre": "Alfredo Cervantes Luna", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  , 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 3, "Municipio": "Santo Tomás", "Nombre": "María Luna Angulo", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ , 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Santo Tomás", "Nombre": "Jhonny Charris Escorcia", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.827500,10.712222, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 2, "Municipio": "Santo Tomás", "Nombre": "Alfredo Cervantes Luna", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [   -74.827778,10.711944, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 3, "Municipio": "Santo Tomás", "Nombre": "María Luna Angulo", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.827778,10.711667, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 4, "Municipio": "Santo Tomás", "Nombre": "Eliecer Pertuz Carrillo", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.815556, 10.719444, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 5, "Municipio": "Santo Tomás", "Nombre": "Adalberto Pertuz Charris", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ -74.829722, 10.706111, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 6, "Municipio": "Santo Tomás", "Nombre": "Ledeima De la Hoz Orozco", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [    -74.810278, 10.711944, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 7, "Municipio": "Santo Tomás", "Nombre": "Jacobo Morales Fontalvo", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [   -74.831944,10.178333, 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 6, "Municipio": "Santo Tomás", "Nombre": "Ledeima De la Hoz Orozco", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [    -74.816111,  10.712222,0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 7, "Municipio": "Santo Tomás", "Nombre": "Jacobo Morales Fontalvo", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [   -74.771667, 10.753333, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 8, "Municipio": "Santo Tomás", "Nombre": "Juan Fontalvo Polo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.811944, 10.747778, 0.0] } },
     { "type": "Feature", "properties": { "OBJECTID": 9, "Municipio": "Santo Tomás", "Nombre": "Daniel Fontalvo Carrillo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.805556,10.740278, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 10, "Municipio": "Santo Tomás", "Nombre": "María Urzola Acosta", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ , 0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 10, "Municipio": "Santo Tomás", "Nombre": "María Urzola Acosta", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.816111,10.769444, 0.0 ] } },
 
 
 ] };
@@ -87,7 +87,7 @@ var json_sabanagrande={
     { "type": "Feature", "properties": { "OBJECTID": 5, "Municipio": "Sabanagrande", "Nombre": "Kelly Duran Berdejo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ -74.774722, 10.610556, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 6, "Municipio": "Sabanagrande", "Nombre": "Leonardo Caro Fontalvo", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [   -74.794167,10.651111, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 7, "Municipio": "Sabanagrande", "Nombre": "José Rodriguez Vazquez", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.794444, 10.651315, 0.0 ] } },
-    { "type": "Feature", "properties": { "OBJECTID": 8, "Municipio": "Sabanagrande", "Nombre": "Marco Padilla Martinez", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -70.849444, 10.667500,  0.0] } },
+    { "type": "Feature", "properties": { "OBJECTID": 8, "Municipio": "Sabanagrande", "Nombre": "Marco Padilla Martinez", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  ,  0.0] } },
     { "type": "Feature", "properties": { "OBJECTID": 9, "Municipio": "Sabanagrande", "Nombre": "Adalberto Geovanetty Durán", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -74.795680, 10.632624,0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 10, "Municipio": "Sabanagrande", "Nombre": "Fabiola Mora", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [ -74.794444,  10.650437, 0.0 ] } },
 
