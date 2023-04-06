@@ -201,18 +201,10 @@ function limpiar() {
 
 
 
-function cerrarV(){
 
-
-  document.getElementById("sidebar").classList.toggle('active');
- document.getElementById("sidebarMenu").classList.toggle('modal');;
-
-}
 function load(){
 
-  var w = window.innerWidth;
-  if( w<991){
-  cerrarV()}
+
 
 
   document.getElementById("table1").style.height= '0px';
