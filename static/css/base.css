@@ -323,36 +323,42 @@ html { height: auto; min-height: 900px;}
 
 #table1{
   height: '0px';
+  width: '100%';
   visibility: hidden;
 
 }
 
 #table2{
   height: '0px';
+  width: '100%';
   visibility: hidden;
  
 }
 
 #table3{
   height: '0px';
+  width: '100%';
   visibility: hidden;
   
 }
 
 #table4{
   height: '0px';
+  width: '100%';
   visibility: hidden;
 
 }
 
 #table5{
   height: '0px';
+  width: '100%';
   visibility: hidden;
 
 }
 
 #table6{
   height: '0px';
+  width: '100%';
   visibility: hidden;
 
 }
