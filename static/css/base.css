@@ -35,8 +35,8 @@
 
 }
 
-.modebar{
-  display: none !important;
+.js-plotly-plot .plotly .modebar{
+  top:25px !important;
 }
 
 /* === BOX === */ 

@@ -8,6 +8,131 @@ var sketch;
 
 
 
+document.getElementById("conflicto").onchange = function(element){
+    var selVal  = document.getElementById("conflicto").value
+ 
+switch (selVal) {
+    case "OpenStreet":
+        var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+             attributions: ' ',
+                url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+            });
+            break;
+    case "Google":
+                    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+                        attributions: ' ',
+                            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+                        });
+                        break;
+
+case "Open":
+    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+        attributions: ' ',
+            url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=TekgzTaxuD0y03oplKCg'
+        });
+        break;
+
+        case "Noche":
+    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+        attributions: ' ',
+            url: 'https://api.maptiler.com/maps/toner-v2/{z}/{x}/{y}.png?key=TekgzTaxuD0y03oplKCg'
+        });
+        break;
+
+
+
+                            }
+        l=map.getLayers().getArray()[0];
+        l.setSource(lyr_OpenStreetMap_0);
+  
+ };
+
+
+
+ 
+document.getElementById("muni").onchange = function(element){
+    var selVal  = document.getElementById("muni").value
+ 
+switch (selVal) {
+    
+  
+
+
+    case "Base":
+        map.getView().setCenter(ol.proj.transform([-75.007500, 10.647222], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        var w = window.innerWidth;
+        if( w>800){
+        view.setZoom(10);
+
+    }else { view.setZoom(8);}
+                        break;
+
+    case "Luruaco":
+        map.getView().setCenter(ol.proj.transform([-75.147500, 10.647222], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        var w = window.innerWidth;
+        if( w>800){
+        view.setZoom(13);
+
+    }else { view.setZoom(11.4);}
+                        break;
+   
+     
+                
+
+    case "Candelaria":
+        map.getView().setCenter(ol.proj.transform([  -74.858056,10.494722], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        
+        var w = window.innerWidth;
+        if( w>800){
+            view.setZoom(12.3);
+
+    }else { view.setZoom(11.3);}
+                        break;
+  
+      
+                       
+
+    case "Sabanagrande":
+        map.getView().setCenter(ol.proj.transform([  -74.774722,  10.609722], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+  
+        var w = window.innerWidth;
+        if( w>800){
+            view.setZoom(13);
+
+    }else { view.setZoom(11.3);}
+                        break;
+ 
+
+    case "Manati":
+        map.getView().setCenter(ol.proj.transform([ -74.992778, 10.437500], 'EPSG:4326', 'EPSG:3857'))
+        var view = map.getView();
+
+        var w = window.innerWidth;
+        if( w>800){
+            view.setZoom(14);
+
+    }else { view.setZoom(11.3);}
+                        break;
+    
+   
+                        break;
+
+                     
+                        
+
+
+                            }
+      
+  
+ };
+
 
 
 closer.onclick = function() {

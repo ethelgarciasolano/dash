@@ -8,30 +8,39 @@
 <div id="loading" > </div>
 <div class="container" >
           <div style='padding-left: 2%;'>
-                  <label for="conflicto">  Selecciona fondo: </label>
+            <div class="row mb-4 justify-content-center">
+                <div class="mr-3 ml-3">
+                  <h2 for="conflicto">  Selecciona fondo: </h2>
+                  </div>
                   <select name="pets" id="conflicto">
                     <option value="Google">Google</option>
                     <option value="OpenStreet">OpenStreet</option>
                     <option value="Open">Montaña</option>
                     <option value="Noche">Linea</option>
+               
                   </select>
-                  <button type="button" id="centrar">Centrar</button>
-                  <form class="form-inline" method="POST" action="{{ url_for('mapa') }}">
-                          <label for="tipomapa">  Selecciona Datos: </label>
+            
+                        <div class="mr-3 ml-3">
+                          <h2 for="tipomapa">  Selecciona centro: </h2>
+                          </div>
                           <select id="tipomapaNocturno" style='display: none;'>
                           </select>
-                          <select  name="tipomapa" id="tipomapaDiurno" >
-                            <option value='Diurno'>Conflicto Diurno</option>
-                            <option value='Nocturno'>Conflicto Nocturno</option>
-                            <option value='Dia'>Ruido Diurno</option>
-                            <option value='Noche'>Ruido Nocturno</option>
+                          <select  name="tipomapa" id="muni" >
+                            <option value='Base'>Atlántico</option>
+                            <option value='Luruaco'>Luruaco</option>
+                            <option value='Manati'>Manatí</option>
+                            <option value='Sabanagrande'>Sabanagrande</option>
+                            <option value='Ponedera'>Ponedera</option>
+                            <option value='Santo'>Santo tomás</option>
+                            <option value='Candelaria'>Candelaria</option>
+
                           </select>
-                         <button type="submit" class="btn btn-default">Actualizar</button>
-                    </form>
+           </div>
+                 
                         
 
          </div>
-         <h2 style='margin:auto; text-align: center;'>CONFLICTO DIURNO</h2>
+      
           <div id="map" style='width: 95%;   margin-left: auto; margin-right: auto;'>
               <div id="popup" class="ol-popup">
                   <a href="#" id="popup-closer" class="ol-popup-closer"></a>

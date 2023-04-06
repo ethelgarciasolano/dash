@@ -99,6 +99,12 @@
     display: block;
     border-width:0px;
   }
+
+  #modebar-15de24{
+    position: absolute;
+    top: 25px;
+  
+  }
 }
 
 @media only screen and (max-width: 475px){	

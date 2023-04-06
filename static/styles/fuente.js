@@ -6,8 +6,8 @@ var style_COORDENADAS_2 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
@@ -47,8 +47,8 @@ var style_COORDENADAS_3 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
@@ -88,8 +88,8 @@ var style_COORDENADAS_4 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
@@ -128,8 +128,8 @@ var style_COORDENADAS_5 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
@@ -168,8 +168,8 @@ var style_COORDENADAS_6 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
@@ -208,8 +208,8 @@ var style_COORDENADAS_7 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Nombre");
-    var labelText = feature.get("Nombre");
+    var value = feature.get("Municipio");
+    var labelText = feature.get("Municipio");
     size = 4;
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";

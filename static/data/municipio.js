@@ -24,7 +24,7 @@ var json_candelaria={
     "type": "FeatureCollection",
     "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
     "features": [
-    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Candelaria", "Nombre": "Alceides Ayala", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ -74.902778, 10.500833,0.0 ] } },
+    { "type": "Feature", "properties": { "OBJECTID": 1, "Municipio": "Candelaria", "Nombre": "Alcides Ayala", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [ -74.902778, 10.500833,0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 2, "Municipio": "Candelaria", "Nombre": "Alvaro Muñoz Ariza", "Modelo": 'FRÍJOL - PLÁTANO - MAÍZ' }, "geometry": { "type": "Point", "coordinates": [  -74.856111,10.419444, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 3, "Municipio": "Candelaria", "Nombre": "José Dominguez Ariza", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -74.908889, 10.485833, 0.0 ] } },
     { "type": "Feature", "properties": { "OBJECTID": 4, "Municipio": "Candelaria", "Nombre": "José Morales Rodriguez", "Modelo": 'FRÍJOL - PLÁTANO - YUCA' }, "geometry": { "type": "Point", "coordinates": [  -74.858056,10.474722, 0.0 ] } },
