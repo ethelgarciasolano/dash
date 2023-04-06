@@ -119,7 +119,7 @@ btn4.addEventListener('click', () => {
 
 });
 
-const btn5 = document.getElementById('hid5');
+const btn5 = document.getElementById('hide5');
 
 btn5.addEventListener('click', () => {
 
@@ -134,7 +134,7 @@ btn5.addEventListener('click', () => {
 });
 
 
-const btn6 = document.getElementById('hid6');
+const btn6 = document.getElementById('hide6');
 
 btn6.addEventListener('click', () => {
 

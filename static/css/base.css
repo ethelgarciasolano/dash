@@ -472,31 +472,37 @@ a[href*="#followme"]::before {
 
 
 #table1{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+
 }
 
 #table2{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+ 
 }
 
 #table3{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+  
 }
 
 #table4{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+
 }
 
 #table5{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+
 }
 
 #table6{
-  visibility: hidden;
   height: '0px';
+  visibility: hidden;
+
 }
