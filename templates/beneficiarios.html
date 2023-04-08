@@ -5,51 +5,60 @@
 
   
        
+       
 
-        <div class="container ">
-            <div class="p-2">
-                <div class="one">
-                    <h1>BENEFICIARIOS</h1>
+<div class="container ">
+    <div class="p-2">
+        <div class="one">
+            <h1>RESUMEN ACTIVIDADES</h1>
+        </div>
+      
+
+
+        <div >
+
+            <form id="searchForm" action="javascript:search();">
+                <div class="input-group pt-4 pr-4 pl-4 justify-content-center">
+                    <div class="mr-3 ml-3">
+                    <h2>BUSCAR ACTIVIDAD:</h2>
                 </div>
+                   <input type="text" id="searchItem" class="form-control border" placeholder="Escriba la actividad">
+                
+                </div>
+                <div class="input-group pb-3 justify-content-center">
+                    <h2 id="results"></h2>
+                </div>
+                <div class="input-group pb-3 justify-content-center">
+                <button id="go" class="mx-3 btn-pill btn-shadow btn-wide fsize-1 btn
+                btn-dark btn-lg" type="button" 
+                onclick="document.getElementById('searchForm').submit(); return false;">Buscar
+                 </button>
+                 <button id="go" class="btn-pill btn-shadow btn-wide fsize-1 btn
+                 btn-dark btn-lg" onclick='limpiar()' type="button">Limpiar
+                  </button>
+
+                </div>
+             </form>
+
+             <div class="row">
               
-
-
-                <div >
-
-                    <form id="searchForm" action="javascript:search();">
-                        <div class="input-group pt-4 pr-4 pl-4 justify-content-center">
-                            <div class="mr-3 ml-3">
-                            <h2>BUSCAR BENEFICIARIO:</h2>
-                        </div>
-                           <input type="text" id="searchItem" class="form-control border" placeholder="Escriba la actividad">
-                        
-                        </div>
-                        <div class="input-group pb-3 justify-content-center"></div>
-                            <h2 id="results"></h2>
-                        </div>
-                        <div class="input-group pb-3 justify-content-center">
-                        <button id="go" class="mx-3 btn-pill btn-shadow btn-wide fsize-1 btn
-                        btn-dark btn-lg" type="button" 
-                        onclick="document.getElementById('searchForm').submit(); return false;">Buscar
-                         </button>
-                         <button id="go" class="btn-pill btn-shadow btn-wide fsize-1 btn
-                         btn-dark btn-lg" onclick='limpiar()' type="button">Limpiar
-                          </button>
-
-                        </div>
-                     </form>
-
-                    <div class="p-4 shadow bg-white rounded  boxcontaineract
-                    col">
-                        <div class="main-card mb-3 card">
-                            <div id='hide1' class="card-header">
-                                <h2>LURUACO<h2>
-                            </div>
-                            <div id='table1' class="table-responsive">
-                                <table   class="align-middle text-truncate mb-0 table
-                                 table-hover">
-                                    <thead >
-                                        <tr>
+                <label style="margin: 3px;"><input type="checkbox" id="cbox1"  onclick="row()">Fijar fila</label> 
+          
+                <label style="margin: 3px;"><input type="checkbox" id="cbox2" onclick="col()"> Fijar columna</label>
+          
+            </div>
+              
+            <div class="p-4 shadow bg-white rounded boxcontaineract
+            col">
+                <div class="main-card mb-3 card">
+                    <div id='hide1' class="card-header">
+                        <h2>LURUACO<h2>
+                    </div>
+                    <div id='table1' class="table-responsive" >
+                        <table   class="tab align-middle text-truncate mb-0 table
+                         table-hover ">
+                            <thead class="headcol">
+                                <tr >
                                        
                                             <th class="text-center">SECTOR</th>
                                             <th class="text-center">NOMBRE</th>
@@ -419,7 +428,7 @@
                                 <h2>CANDELARIA<h2>
                             </div>
                             <div  id='table2' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class=" tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead2'>
                                         <tr >
@@ -796,7 +805,7 @@
                                 <h2>PONEDERA<h2>
                             </div>
                             <div  id='table3' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class=" tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead3'>
                                         <tr >
@@ -1171,7 +1180,7 @@
                                 <h2>SANTO TOMÁS<h2>
                             </div>
                             <div  id='table4' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class="tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead4'>
                                         <tr >
@@ -1550,7 +1559,7 @@
                                 <h2>SABANAGRANDE<h2>
                             </div>
                             <div  id='table5' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class="tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead5'>
                                         <tr >
@@ -1927,7 +1936,7 @@
                                 <h2>MANATÍ<h2>
                             </div>
                             <div  id='table6' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class=" tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead6'>
                                         <tr >

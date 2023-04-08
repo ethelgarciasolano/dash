@@ -23,7 +23,7 @@
                            <input type="text" id="searchItem" class="form-control border" placeholder="Escriba la actividad">
                         
                         </div>
-                        <div class="input-group pb-3 justify-content-center"></div>
+                        <div class="input-group pb-3 justify-content-center">
                             <h2 id="results"></h2>
                         </div>
                         <div class="input-group pb-3 justify-content-center">
@@ -38,25 +38,33 @@
                         </div>
                      </form>
 
+                     <div class="row">
+                      
+                        <label style="margin: 3px;"><input type="checkbox" id="cbox1"  onclick="row()">Fijar fila</label> 
+                  
+                        <label style="margin: 3px;"><input type="checkbox" id="cbox2" onclick="col()"> Fijar columna</label>
+                  
+                    </div>
+                      
                     <div class="p-4 shadow bg-white rounded boxcontaineract
                     col">
                         <div class="main-card mb-3 card">
                             <div id='hide1' class="card-header">
                                 <h2>OBJETIVO ESPECÍFICO 1<h2>
                             </div>
-                            <div id='table1' class="table-responsive">
-                                <table   class="align-middle text-truncate mb-0 table
+                            <div id='table1' class="table-responsive" >
+                                <table   class="tab align-middle text-truncate mb-0 table
                                  table-hover ">
-                                    <thead >
+                                    <thead class="headcol">
                                         <tr >
                                        
-                                            <th class="text-center">ACTIVIDADES</th>
-                                            <th class="text-center">ESTADO</th>
-                                            <th class="text-center">ENTREGABLES</th>
+                                            <th class="headcol text-center">ACTIVIDADES</th>
+                                            <th class="headcol text-center">ESTADO</th>
+                                            <th class="headcol text-center">ENTREGABLES</th>
                                            
-                                            <th class="text-center">AVANCE</th>
-                                            <th class="text-center">NOMBRE ARCHIVO</th>
-                                            <th class="text-center">EVIDENCIA</th>
+                                            <th class="headcol text-center">AVANCE</th>
+                                            <th class="headcol text-center">NOMBRE ARCHIVO</th>
+                                            <th class="headcol text-center">EVIDENCIA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -188,7 +196,7 @@
                                 <h2>OBJETIVO ESPECÍFICO 2<h2>
                             </div>
                             <div  id='table2' class="table-responsive">
-                                <table class="align-middle text-truncate mb-0 table
+                                <table class="tab align-middle text-truncate mb-0 table
                                  table-hover">
                                     <thead id='thead2'>
                                         <tr >
@@ -801,7 +809,7 @@
                             <h2>OBJETIVO ESPECÍFICO 3<h2>
                         </div>
                         <div  id='table3' class="table-responsive">
-                            <table  class="align-middle text-truncate mb-0 table
+                            <table  class="tab align-middle text-truncate mb-0 table
                              table-hover">
                                 <thead id='thead3'>
                                     <tr>
@@ -1193,6 +1201,7 @@
    
 
         </div>
+    </div>
 
     </body>
     

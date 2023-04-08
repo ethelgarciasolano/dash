@@ -1,0 +1,50 @@
+.div1 {
+    overflow: scroll;
+}
+
+.div2 {
+    overflow: scroll;
+
+}
+
+.div1 th {
+
+   
+    position: sticky;
+    top: 0;
+    background: #ffebb5;
+    z-index: 1;
+}
+
+
+.div1   th:nth-child(1) {
+    z-index: 72;
+}
+
+
+
+
+.div2 th:nth-child(1),
+.div2 td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+ 
+}
+
+
+
+.div2 th:nth-child(1) {
+    z-index: 72;
+}
+
+.div2 td:nth-child(1){
+    background: #ffebb5;
+}
+
+.div2 tr th:nth-child(1){
+    background: #ffebb5;
+}
+
+
+

@@ -320,23 +320,21 @@ html { height: auto; min-height: 900px;}
 /*            Overlay            */
 /*-------------------------------*/
 
-table thead tr:first-child {
-  position: sticky;
-  top: 0;
-  z-index: 22;
-}
+
+
 
 #table1{
   height: '0px';
   width: '100%';
   visibility: hidden;
+  position: relative;
 
 }
 
 #table2{
   height: '0px';
   width: '100%';
-  visibility: hidden;
+ 
  
 }
 

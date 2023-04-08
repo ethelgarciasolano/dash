@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html >
+
+<head>
+    <!-- Load c3.css -->
+    <link href="static/css/table.css" rel="stylesheet">
+</head>
+<body  >
+  <div class="row">
+  <label><input type="checkbox" id="cbox1" value="first_checkbox" onclick="row()"> Este es mi primer checkbox</label><br>
+  <input type="checkbox" id="cbox2" value="second_checkbox" onclick="col()"> <label for="cbox2">Este es mi segundo checkbox</label>
+</div>
+
+  <div id='tab' class="div">
+    <table>
+      <thead class="headcol">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+            <th>Column 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Row Data 1</td>
+            <td>Row Data 2</td>
+            <td>Row Data 3</td>
+            <td>Row Data 4</td>
+            <td>Row Data 5</td>
+            <td>Row Data 6</td>
+        </tr>
+        <tr>
+            <td>Row Data 1</td>
+            <td>Row Data 2</td>
+            <td>Row Data 3</td>
+            <td>Row Data 4</td>
+            <td>Row Data 5</td>
+            <td>Row Data 6</td>
+        </tr>
+
+        <tr>
+            <td>Row Data 1</td>
+            <td>Row Data 2</td>
+            <td>Row Data 3</td>
+            <td>Row Data 4</td>
+            <td>Row Data 5</td>
+            <td>Row Data 6</td>
+        </tr>
+        <tr>
+          <td>Row Data 1</td>
+          <td>Row Data 2</td>
+          <td>Row Data 3</td>
+          <td>Row Data 4</td>
+          <td>Row Data 5</td>
+          <td>Row Data 6</td>
+      </tr>
+      <tr>
+        <td>Row Data 1</td>
+        <td>Row Data 2</td>
+        <td>Row Data 3</td>
+        <td>Row Data 4</td>
+        <td>Row Data 5</td>
+        <td>Row Data 6</td>
+      </tr>
+      <tr>
+        <td>Row Data 1</td>
+        <td>Row Data 2</td>
+        <td>Row Data 3</td>
+        <td>Row Data 4</td>
+        <td>Row Data 5</td>
+        <td>Row Data 6</td>
+    </tr>
+    <tr>
+      <td>Row Data 1</td>
+      <td>Row Data 2</td>
+      <td>Row Data 3</td>
+      <td>Row Data 4</td>
+      <td>Row Data 5</td>
+      <td>Row Data 6</td>
+  </tr>
+  <tr>
+    <td>Row Data 1</td>
+    <td>Row Data 2</td>
+    <td>Row Data 3</td>
+    <td>Row Data 4</td>
+    <td>Row Data 5</td>
+    <td>Row Data 6</td>
+</tr>
+<tr>
+  <td>Row Data 1</td>
+  <td>Row Data 2</td>
+  <td>Row Data 3</td>
+  <td>Row Data 4</td>
+  <td>Row Data 5</td>
+  <td>Row Data 6</td>
+</tr>
+<tr>
+  <td>Row Data 1</td>
+  <td>Row Data 2</td>
+  <td>Row Data 3</td>
+  <td>Row Data 4</td>
+  <td>Row Data 5</td>
+  <td>Row Data 6</td>
+</tr>
+<tr>
+  <td>Row Data 1</td>
+  <td>Row Data 2</td>
+  <td>Row Data 3</td>
+  <td>Row Data 4</td>
+  <td>Row Data 5</td>
+  <td>Row Data 6</td>
+</tr>
+</tbody>
+
+    </table>
+</div>
+
+</body>
+
+<script>
+function row() {
+ 
+  var checkBox = document.getElementById("cbox1");
+  var table = document.getElementById("tab");
+
+  if (checkBox.checked == true ){
+
+    table.classList.add('div1');
+   
+  } else  {
+    table.classList.remove('div1');
+  }
+}
+
+
+function col() {
+  var checkBox = document.getElementById("cbox2");
+  var table = document.getElementById("tab");
+
+  if (checkBox.checked == true ){
+
+    table.classList.add('div2');
+   
+  } else  {
+    table.classList.remove('div2');
+}}
+
+</script>
+
+
+</html>
