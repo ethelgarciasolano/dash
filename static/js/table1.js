@@ -166,7 +166,7 @@ function search() {
   var pattern = name.toLowerCase();
   var targetId = "";
 
-  var divs = document.getElementsByClassName("text-justify");
+  var divs = document.getElementsByClassName("text-left");
 
   document.getElementById("table1").style.visibility = "visible";
   document.getElementById("table1").style.maxHeight= '500px';
