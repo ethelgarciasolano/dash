@@ -1,11 +1,39 @@
 
+
+
 {% extends "header.html" %}
 
+{% block css%} 
+
+    <!-- Load c3.css -->
+
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/base.css" rel="stylesheet">
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Load d3.js and c3.js -->
+  
+    
+
+    <!-- Mapa -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="static/resources/maps_main.css">
+    <link rel="stylesheet" href="static/resources/ol.css">
+    <link rel="stylesheet" href="static/resources/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="static/resources/qgis2web.css">
+    <link rel="stylesheet" href="static/resources/loading.css">
+
+
+    {% endblock %}
 
 {% block map %} 
 
-
-  
 
 <div class="container" >
     <div id="loading" > </div>
