@@ -84,7 +84,7 @@ var chart = c3.generate({
             }
     },
     donut: {
-        title: "Beneficiarios"
+        title: "Familias participantes"
     }
 });
 
