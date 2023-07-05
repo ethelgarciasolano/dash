@@ -166,48 +166,105 @@ function search() {
   var pattern = name.toLowerCase();
   var targetId = "";
 
-  var divs = document.getElementsByClassName("text-left");
+  var divs = document.getElementsByClassName("text-left r");
 
-  document.getElementById("table1").style.visibility = "visible";
-  document.getElementById("table1").style.maxHeight= '500px';
-  document.getElementById("table1").style.height= 'auto';
-  document.getElementById("table2").style.visibility = "visible";
-  document.getElementById("table2").style.maxHeight= '500px';
-  document.getElementById("table2").style.height= 'auto';
-  document.getElementById("table3").style.visibility = "visible";
-  document.getElementById("table3").style.maxHeight= '500px';
-  document.getElementById("table3").style.height= 'auto';
-  document.getElementById("table4").style.visibility = "visible";
-  document.getElementById("table4").style.maxHeight= '500px';
-  document.getElementById("table4").style.height= 'auto';
-  document.getElementById("table5").style.visibility = "visible";
-  document.getElementById("table5").style.maxHeight= '500px';
-  document.getElementById("table5").style.height= 'auto';
-  document.getElementById("table6").style.visibility = "visible";
-  document.getElementById("table6").style.maxHeight= '500px';
-  document.getElementById("table6").style.height= 'auto';
- 
 
-  for (var i = 0; i < divs.length; i++) {
-     var index = divs[i].innerText.toLowerCase().indexOf(pattern);
-     if (index != -1) {
-      targetId = divs[i].parentNode.id;
-      if( document.getElementById(targetId).style.backgroundColor  !== "rgb(201, 245, 255)"){
-        document.getElementById(targetId).scrollIntoView({block: "center"});
-        document.getElementById(targetId).style.backgroundColor = "#C9F5FF";
-      break;
+  for (var i = 0; i < 6; i++) {
+    var tableId = document.getElementsByClassName("tab align-middle text-truncate mb-0 table table-hover")[i]
+    var tBody = tableId.getElementsByTagName('tbody')[0];
+    var tableRow = tBody.getElementsByTagName('tr');
+    var tablecabeza = tableId.getElementsByTagName('thead')[0];
+    var tableHEAD = tablecabeza.getElementsByTagName('tr');
+    console.log(tableHEAD)
+    for (var j = 0; j < tableRow.length; j++) {
+      tableRow[j].style.display= 'none';
     }
-  }  
-}
-if (divs.length == i) {
+    for (var k = 0; k < tableHEAD.length; k++) {
+      tableHEAD[k].style.display= 'none';
+    }
+  
+    }
+  
+    document.getElementById("hide1").style.display= 'none';
+    document.getElementById("hide2").style.display= 'none';
+    document.getElementById("hide3").style.display= 'none';
+    document.getElementById("hide4").style.display= 'none';
+    document.getElementById("hide5").style.display= 'none';
+    document.getElementById("hide6").style.display= 'none';
+    document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'none';
+    document.getElementById('fijarbene').style.display= 'none';
+  
+    var entro=0
+    for (var i = 0; i < divs.length; i++) {
+  
+       var index = divs[i].innerText.toLowerCase().indexOf(pattern);
+       console.log(divs[i].innerText.toLowerCase())
+     
+       
+       if (index != -1) {
+        entro=1
+        console.log(index)
+        targetId = divs[i].parentNode.id;
+      
+        var tablesele=divs[i].parentNode.parentNode.parentNode.parentNode
+        document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'block';
+        document.getElementById('fijarbene').style.display= 'block';
+        tablesele.previousElementSibling.style.display= 'block';
+        tablesele.style.display= 'block';
+        tablesele.style.visibility = "visible";
+        tablesele.style.maxHeight= '500px';
+        tablesele.style.height= 'auto';
+        divs[i].parentNode.parentNode.parentNode.style.display= ''
+        divs[i].parentNode.parentNode.style.display= ''
+        divs[i].parentNode.style.display= ''
+      
+        
+      
+    }  
+
+  }
+
+  if (entro===0) {
   document.getElementById('results').innerText = 'No existen registros'
   
   }
+
 }
 
 
 
 function limpiar() {
+
+  document.getElementById("table1").style.visibility = "hidden";
+  document.getElementById("table1").style.height= '0px';
+  document.getElementById("table2").style.visibility = "hidden";
+  document.getElementById("table2").style.height= '0px';
+  document.getElementById("table3").style.visibility = "hidden";
+  document.getElementById("table3").style.height= '0px';
+  document.getElementById("table4").style.visibility = "hidden";
+  document.getElementById("table4").style.height= '0px';
+  document.getElementById("table5").style.visibility = "hidden";
+  document.getElementById("table5").style.height= '0px';
+  document.getElementById("table6").style.visibility = "hidden";
+  document.getElementById("table6").style.height= '0px';
+  document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'block';
+  document.getElementById('fijarbene').style.display= 'block';
+
+  for (var i = 0; i < 6; i++) {
+    var tableId = document.getElementsByClassName("tab align-middle text-truncate mb-0 table table-hover")[i]
+    var tBody = tableId.getElementsByTagName('tbody')[0];
+    var tableRow = tBody.getElementsByTagName('tr');
+    for (var j = 0; j < tableRow.length; j++) {
+      tableRow[j].style.display= '';
+    }
+    }
+
+  document.getElementById("hide1").style.display= 'block';
+  document.getElementById("hide2").style.display= 'block';
+  document.getElementById("hide3").style.display= 'block';
+  document.getElementById("hide4").style.display= 'block';
+  document.getElementById("hide5").style.display= 'block';
+  document.getElementById("hide6").style.display= 'block';
   document.getElementById('results').innerText = ''
   const tableRows = document.getElementsByTagName('tr');
 

@@ -36,7 +36,7 @@
                 </div>
                 <div class="row d-flex justify-content-center">
                 <div class="p-4 shadow rounded boxcontainer col-lg-8 " style="display: flex !important;">
-                <iframe class='iframe' src="{{ url_for('frame') }}" > </iframe>
+                <iframe loading="lazy" class='iframe' src="{{ url_for('frame') }}" > </iframe>
                </div>
           
                <div class="  boxcontainer col">
@@ -60,7 +60,7 @@
 
                     </div>
                     <div class="pt-3 pb-3 shadow rounded boxcontainer col">
-                        <div class="small pb-1 text-center">Hectáreas</div>
+                        <div class="small pb-1 text-center">Hectáreas sembradas</div>
                         <div class="row d-flex justify-content-center">
                             <img class="icon" src="static/images/tierra.png"></img>
                             <div id='hectareas' class="large pl-3"></div>
@@ -92,7 +92,7 @@
                         <div class="p-4 shadow rounded boxcontainer col-lg-7 " style="display: flex !important; ">
                             <div class="col justify-content-center">
                                 <div class="small pb-2 text-center">Porcentajes</div>
-                            <div id="chart"></div>
+                            <div id="chart" loading="lazy"></div>
                         </div>
                         </div>
 

@@ -84,7 +84,7 @@ var chart = c3.generate({
             }
     },
     donut: {
-        title: "Familias participantes"
+        title: "Familias por municipio"
     }
 });
 

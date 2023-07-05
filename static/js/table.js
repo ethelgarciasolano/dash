@@ -119,33 +119,55 @@ function search() {
   var targetId = "";
 
   var divs = document.getElementsByClassName("text-left");
-  
-  document.getElementById("table1").style.visibility = "visible";
-  document.getElementById("table1").style.maxHeight= '500px';
-  document.getElementById("table1").style.height= 'auto';
-  document.getElementById("table2").style.visibility = "visible";
-  document.getElementById("table2").style.maxHeight= '500px';
-  document.getElementById("table2").style.height= 'auto';
-  document.getElementById("table3").style.visibility = "visible";
-  document.getElementById("table3").style.maxHeight= '500px';
-  document.getElementById("table3").style.height= 'auto';
- 
 
+  for (var i = 0; i < 3; i++) {
+  var tableId = document.getElementsByClassName("tab align-middle text-truncate mb-0 table table-hover")[i]
+  var tBody = tableId.getElementsByTagName('tbody')[0];
+  var tableRow = tBody.getElementsByTagName('tr');
+  var tablecabeza = tableId.getElementsByTagName('thead')[0];
+  var tableHEAD = tablecabeza.getElementsByTagName('tr');
+  for (var j = 0; j < tableRow.length; j++) {
+    tableRow[j].style.display= 'none';
+  }
 
+  for (var k = 0; k < tableHEAD.length; k++) {
+    tableHEAD[k].style.display= 'none';
+  }
+
+  }
+  document.getElementById("hide1").style.display= 'none';
+  document.getElementById("hide2").style.display= 'none';
+  document.getElementById("hide3").style.display= 'none';
+  document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'none';
+  document.getElementById('fijar').style.display= 'none';
+
+  var entro=0
   for (var i = 0; i < divs.length; i++) {
+
      var index = divs[i].innerText.toLowerCase().indexOf(pattern);
-     if (index != -1) {
+     if (index != 0 && index != -1) {
+      entro=1
+      console.log(index)
       targetId = divs[i].parentNode.id;
-      if( document.getElementById(targetId).style.backgroundColor  !== "rgb(201, 245, 255)"){
-        document.getElementById(targetId).scrollIntoView({block: "center"});
-        document.getElementById(targetId).style.backgroundColor = "#C9F5FF";
-      break;
-    }
+      console.log(divs[i].parentNode.parentNode.parentNode.parentNode)
+      var tablesele=divs[i].parentNode.parentNode.parentNode.parentNode
+      document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'block';
+      document.getElementById('fijar').style.display= 'block';
+      tablesele.previousElementSibling.style.display= 'block';
+      tablesele.style.display= 'block';
+      tablesele.style.visibility = "visible";
+      tablesele.style.maxHeight= '500px';
+      tablesele.style.height= 'auto';
+      divs[i].parentNode.parentNode.parentNode.style.display= ''
+      divs[i].parentNode.style.display= ''
+     
+      
+    
   }  
 
 }
 
-if (divs.length == i) {
+if (entro===0) {
 document.getElementById('results').innerText = 'No existen registros'
 
 }
@@ -154,6 +176,27 @@ document.getElementById('results').innerText = 'No existen registros'
 
 
 function limpiar() {
+  document.getElementById("table2").style.visibility = "hidden";
+  document.getElementById("table2").style.height= '0px';
+  document.getElementById("table1").style.visibility = "hidden";
+  document.getElementById("table1").style.height= '0px';
+  document.getElementById("table3").style.visibility = "hidden";
+  document.getElementById("table3").style.height= '0px';
+  document.getElementsByClassName('p-4 shadow bg-white rounded boxcontaineract col')[0].style.display= 'block';
+  document.getElementById('fijar').style.display= 'block';
+  for (var i = 0; i < 3; i++) {
+    var tableId = document.getElementsByClassName("tab align-middle text-truncate mb-0 table table-hover")[i]
+    var tBody = tableId.getElementsByTagName('tbody')[0];
+    var tableRow = tBody.getElementsByTagName('tr');
+    for (var j = 0; j < tableRow.length; j++) {
+      tableRow[j].style.display= '';
+    }
+    }
+
+  document.getElementById("hide1").style.display= 'block';
+  document.getElementById("hide2").style.display= 'block';
+  document.getElementById("hide3").style.display= 'block';
+
   document.getElementById('results').innerText = ''
   const tableRows = document.getElementsByTagName('tr');
 
