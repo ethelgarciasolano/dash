@@ -215,6 +215,7 @@ function search() {
         tablesele.style.maxHeight= '500px';
         tablesele.style.height= 'auto';
         divs[i].parentNode.parentNode.parentNode.style.display= ''
+        divs[i].parentNode.parentNode.parentNode.getElementsByTagName('thead')[0].getElementsByTagName('tr')[0].style.display= ''
         divs[i].parentNode.parentNode.style.display= ''
         divs[i].parentNode.style.display= ''
       
