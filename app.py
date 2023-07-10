@@ -10,6 +10,7 @@ app.debug = True
 app.title = 'DASHAGRO'
 
 
+@property
 @app.route('/', methods=('GET', 'POST'))
 def index():
     try:
@@ -18,7 +19,7 @@ def index():
       
         return render_template( 'index.html')
     
-
+@property
 @app.route('/beneficiarios', methods=('GET', 'POST'))
 def beneficiarios():
     try:
@@ -26,7 +27,7 @@ def beneficiarios():
     except Exception as ex:
       
         return render_template( 'index.html')
-
+@property
 @app.route('/actividades', methods=('GET', 'POST'))
 def actividades():
     try:
@@ -35,6 +36,7 @@ def actividades():
       
         return render_template( 'index.html')
     
+@property
 @app.route('/mapa', methods=('GET', 'POST'))
 def mapa():
     try:
@@ -43,6 +45,7 @@ def mapa():
       
         return render_template( 'index.html')
 
+@property
 @app.route('/frame', methods=('GET', 'POST'))
 def frame():
     try:
@@ -51,6 +54,7 @@ def frame():
       
         return render_template( 'index.html')
 
+@property
 @app.route('/contacto', methods=('GET', 'POST'))
 def contacto():
     try:
