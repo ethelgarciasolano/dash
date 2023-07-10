@@ -1,6 +1,12 @@
 
 
 
+@media all and (display-mode: standalone) {
+  body {
+    background-color: yellow;
+  }
+}
+
 #searchItem{
   min-width: 220px;
 }

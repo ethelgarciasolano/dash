@@ -7,6 +7,7 @@ const filesToCache = [
   "frame",
   "mapa",
   "contacto",
+
   'static/resources/maps_main.css',
   'static/resources/ol.css',
   'static/resources/ol-layerswitcher.css',
