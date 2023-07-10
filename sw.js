@@ -1,5 +1,7 @@
 const dataCacheName = 'pwa-test-data';
 const cacheName = 'pwa-test';
+const PRECACHE = 'precache-v1';
+const RUNTIME = 'runtime';
 const filesToCache = [
   "/",
   "actividades",
