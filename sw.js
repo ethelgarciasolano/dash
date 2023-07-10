@@ -89,21 +89,19 @@ const filesToCache = [
   });
   
   
-  self.addEventListener('activate', function (e) {
-    console.log('[ServiceWorker] Activate');
-    e.waitUntil(
-      caches.keys().then(function (keyList) {
-        return Promise.all(keyList.map(function (key) {
-          if (key !== cacheName && key !== dataCacheName) {
-            console.log('[ServiceWorker] Removing old cache', key);
-            return caches.delete(key);
-          }
-        }));
-      })
-    );
-    return self.clients.claim();
-  });
-  
+// The activate handler takes care of cleaning up old caches.
+self.addEventListener('activate', event => {
+  const currentCaches = [PRECACHE, RUNTIME];
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+    }).then(cachesToDelete => {
+      return Promise.all(cachesToDelete.map(cacheToDelete => {
+        return caches.delete(cacheToDelete);
+      }));
+    }).then(() => self.clients.claim())
+  );
+});
   
   self.addEventListener('fetch', function (e) {
     console.log("fetch! ", e.request);
