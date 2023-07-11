@@ -79,32 +79,32 @@ const filesToCache = [
 
 
 
-  self.addEventListener('install', function (e) {
-    console.log('[ServiceWorker] Install');
-    e.waitUntil(
-      caches.open(cacheName).then(function (cache) {
-        console.log(cache)
-        console.log('[ServiceWorker] Caching app shell');
-        return cache.addAll(filesToCache);
-      })
-    );
-  });
+//   self.addEventListener('install', function (e) {
+//     console.log('[ServiceWorker] Install');
+//     e.waitUntil(
+//       caches.open(cacheName).then(function (cache) {
+//         console.log(cache)
+//         console.log('[ServiceWorker] Caching app shell');
+//         return cache.addAll(filesToCache);
+//       })
+//     );
+//   });
   
   
-// The activate handler takes care of cleaning up old caches.
-self.addEventListener('activate', event => {
-  console.log('activate')
-  const currentCaches = [PRECACHE, RUNTIME];
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-    }).then(cachesToDelete => {
-      return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
-      }));
-    }).then(() => self.clients.claim())
-  );
-});
+// // The activate handler takes care of cleaning up old caches.
+// self.addEventListener('activate', event => {
+//   console.log('activate')
+//   const currentCaches = [PRECACHE, RUNTIME];
+//   event.waitUntil(
+//     caches.keys().then(cacheNames => {
+//       return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+//     }).then(cachesToDelete => {
+//       return Promise.all(cachesToDelete.map(cacheToDelete => {
+//         return caches.delete(cacheToDelete);
+//       }));
+//     }).then(() => self.clients.claim())
+//   );
+// });
   
 
 // self.addEventListener('fetch', event => {
@@ -130,33 +130,55 @@ self.addEventListener('activate', event => {
 //   }
 // });
 
-  self.addEventListener('fetch', function (e) {
-    console.log("fetch! ", e.request);
+  // self.addEventListener('fetch', function (e) {
+  //   console.log("fetch! ", e.request);
 
-    e.respondWith(
-      caches
-        .match(e.request)
-        .then((res) => {
-          return res || fetch(e.request).catch((error) => {
+  //   e.respondWith(
+  //     caches
+  //       .match(e.request)
+  //       .then((res) => {
+  //         return res || fetch(e.request).catch((error) => {
        
-            console.log(e.request.caches)
-            console.log(error)
-          });
-        })
+  //           console.log(e.request.caches)
+  //           console.log(error)
+  //         });
+  //       })
       
-    );
-      // e.waitUntil(response);
-  });
+  //   );
+  //     // e.waitUntil(response);
+  // });
 
 
+
+  // window.addEventListener('load', () => {
+  //   const status = navigator.onLine;
+
+  //   console.log('load')
+
+  //   const currentCaches = [PRECACHE, RUNTIME];
+  //   event.waitUntil(
+  //     caches.keys().then(cacheNames => {
+  //       return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+  //     }).then(cachesToDelete => {
+  //       return Promise.all(cachesToDelete.map(cacheToDelete => {
+  //         return caches.delete(cacheToDelete);
+  //       }));
+  //     }).then(() => self.clients.claim())
+  //   );
+
+
+  // });
   // self.addEventListener('fetch', function (e) {
   //   console.log("fetch! ", e.request);
   //   e.respondWith(
   //     caches.open(cacheName).then(cache =>{
   //       return cache.match(e.request).then((res) => {
   //         return res || fetch(e.request).then(
-  //           (res) => {cache.put(e.request,res.clone());
-  //           return res}).catch()
+  //           (res) => { caches.delete(filesToCache);
+  //             cache.addAll(filesToCache);
+             
+
+  //           return res})
 
   //     });
   //   })
