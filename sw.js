@@ -8,6 +8,20 @@ const filesToCache = [
   "beneficiarios",
   "frame",
   "mapa",
+  'DNP',
+  "https://cdn.plot.ly/world_110m.json",
+  'https://d3js.org/d3-geo-projection.v2.min.js',
+  'https://d3js.org/d3-scale-chromatic.v1.min.js',
+  'https://d3js.org/d3.v4.min.js',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/240/149',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/240/150',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/241/149',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/240/148',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/239/148',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/239/149',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/239/150',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/241/150',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/242/149',
   "contacto",
   'static/resources/maps_main.css',
   'static/resources/ol.css',
@@ -23,6 +37,9 @@ const filesToCache = [
   'static/data/municipio.js',
   'static/data/layers.js',
   'static/resources/Autolinker.min.js',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/241/148',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/242/150',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/9/242/148',
   'static/resources/qgis2web.js',
   "templates/actividades.html",
   "templates/beneficiarios.html",
@@ -78,32 +95,32 @@ const filesToCache = [
 
 
 
-//   self.addEventListener('install', function (e) {
-//     console.log('[ServiceWorker] Install');
-//     e.waitUntil(  
-//       caches.open(cacheName).then(function (cache) {
-//         console.log(cache)
-//         console.log('[ServiceWorker] Caching app shell');
-//         return cache.addAll(filesToCache);
-//       })
-//     );
-//   });
+  self.addEventListener('install', function (e) {
+    console.log('[ServiceWorker] Install');
+    e.waitUntil(  
+      caches.open(cacheName).then(function (cache) {
+        console.log(cache)
+        console.log('[ServiceWorker] Caching app shell');
+        return cache.addAll(filesToCache);
+      })
+    );
+  });
   
   
-// // The activate handler takes care of cleaning up old caches.
-// self.addEventListener('activate', event => {
-//   console.log('activate')
-//   const currentCaches = [PRECACHE, RUNTIME];
-//   event.waitUntil(
-//     caches.keys().then(cacheNames => {
-//       return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-//     }).then(cachesToDelete => {
-//       return Promise.all(cachesToDelete.map(cacheToDelete => {
-//         return caches.delete(cacheToDelete);
-//       }));
-//     }).then(() => self.clients.claim())
-//   );
-// });
+//The activate handler takes care of cleaning up old caches.
+self.addEventListener('activate', event => {
+  console.log('activate')
+  const currentCaches = [PRECACHE, RUNTIME];
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+    }).then(cachesToDelete => {
+      return Promise.all(cachesToDelete.map(cacheToDelete => {
+        return caches.delete(cacheToDelete);
+      }));
+    }).then(() => self.clients.claim())
+  );
+});
   
 
 // self.addEventListener('fetch', event => {
@@ -173,10 +190,30 @@ const filesToCache = [
 
   //   e.respondWith( 
     
-  //         fetch(e.request).then(response => {return response }).catch((error) => {
+  //     caches.match(e.request) .then((res) => {
+  //       console.log('resposematch')
+  //       console.log(navigator.onLine)
+  //               return res 
+  //             }).catch((error) => {
+  //               console.log('error2')
+  //               console.log(error)
+  //             }) || fetch(e.request).then(response => {
+  //           console.log(e.request.caches)
+  //           console.log('fetch')
+  //           return response }).catch((error) => {
        
   //                     console.log(e.request.caches)
+  //                     console.log('error1')
   //                     console.log(error)
+
+  //                     caches.match(e.request) .then((res) => {
+  //                       console.log('resposematch')
+  //                               return res 
+  //                             }).catch((error) => {
+  //                               console.log('error2')
+  //                               console.log(error)
+  //                             })
+
   //                   })
 
   //         // console.log('tiene');
@@ -184,8 +221,30 @@ const filesToCache = [
   //         // cache.delete(filesToCache);
   //         // cache.addAll(filesToCache);
         
-  //       )
+  //       ) 
+       
 
 
   //     })
 
+
+
+    self.addEventListener('fetch', function (e) {
+    console.log("fetch! ", e.request);
+
+    e.respondWith(
+      caches
+        .match(e.request)
+        .then((res) => {
+          console.log(navigator.onLine)
+           if (!navigator.onLine ){
+            return res } 
+
+            return fetch(e.request).catch((error) => {
+              return res
+          }).catch();
+        })
+      
+    );
+      // e.waitUntil(response);
+  });
