@@ -96,11 +96,11 @@ const filesToCache = [
 
 
   self.addEventListener('install', function (e) {
-    console.log('[ServiceWorker] Install');
+    //console.log('[ServiceWorker] Install');
     e.waitUntil(  
       caches.open(cacheName).then(function (cache) {
-        console.log(cache)
-        console.log('[ServiceWorker] Caching app shell');
+       // console.log(cache)
+       // console.log('[ServiceWorker] Caching app shell');
         return cache.addAll(filesToCache);
       })
     );
@@ -109,7 +109,7 @@ const filesToCache = [
   
 //The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
-  console.log('activate')
+  //console.log('activate')
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -230,13 +230,13 @@ self.addEventListener('activate', event => {
 
 
     self.addEventListener('fetch', function (e) {
-    console.log("fetch! ", e.request);
+   // console.log("fetch! ", e.request);
 
     e.respondWith(
       caches
         .match(e.request)
         .then((res) => {
-          console.log(navigator.onLine)
+         // console.log(navigator.onLine)
            if (!navigator.onLine ){
             return res } 
 
