@@ -64,6 +64,16 @@ def contacto():
         return render_template( 'index.html')
     
 
+@property
+@app.route('/DNP', methods=('GET', 'POST'))
+def DNP():
+    try:
+        return render_template( 'dnp.html')
+    except Exception as ex:
+      
+        return render_template( 'index.html')
+    
+
 
 
 if __name__ == '__main__':

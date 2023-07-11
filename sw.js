@@ -9,7 +9,6 @@ const filesToCache = [
   "frame",
   "mapa",
   "contacto",
-
   'static/resources/maps_main.css',
   'static/resources/ol.css',
   'static/resources/ol-layerswitcher.css',
@@ -81,7 +80,7 @@ const filesToCache = [
 
 //   self.addEventListener('install', function (e) {
 //     console.log('[ServiceWorker] Install');
-//     e.waitUntil(
+//     e.waitUntil(  
 //       caches.open(cacheName).then(function (cache) {
 //         console.log(cache)
 //         console.log('[ServiceWorker] Caching app shell');
@@ -168,21 +167,25 @@ const filesToCache = [
 
 
   // });
+
   // self.addEventListener('fetch', function (e) {
   //   console.log("fetch! ", e.request);
-  //   e.respondWith(
-  //     caches.open(cacheName).then(cache =>{
-  //       return cache.match(e.request).then((res) => {
-  //         return res || fetch(e.request).then(
-  //           (res) => { caches.delete(filesToCache);
-  //             cache.addAll(filesToCache);
-             
 
-  //           return res})
+  //   e.respondWith( 
+    
+  //         fetch(e.request).then(response => {return response }).catch((error) => {
+       
+  //                     console.log(e.request.caches)
+  //                     console.log(error)
+  //                   })
 
-  //     });
-  //   })
+  //         // console.log('tiene');
+  //         // caches.open(cacheName).then((cache) => {
+  //         // cache.delete(filesToCache);
+  //         // cache.addAll(filesToCache);
+        
+  //       )
 
-  //   );
-  //     // e.waitUntil(response);
-  // });
+
+  //     })
+
