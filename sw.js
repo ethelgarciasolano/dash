@@ -1,6 +1,6 @@
 const dataCacheName = 'pwa-test-data';
 const cacheName = 'pwa-test';
-const PRECACHE = 'precache-v1';
+const PRECACHE = 'pwa-test';
 const RUNTIME = 'runtime';
 const filesToCache = [
   "/",
@@ -93,6 +93,7 @@ const filesToCache = [
   
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', event => {
+  console.log('activate')
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -105,8 +106,33 @@ self.addEventListener('activate', event => {
   );
 });
   
+
+// self.addEventListener('fetch', event => {
+//   console.log('fetch')
+//   // Skip cross-origin requests, like those for Google Analytics.
+//   if (event.request.url.startsWith(self.location.origin)) {
+//     event.respondWith(
+//       caches.match(event.request).then(cachedResponse => {
+//         if (cachedResponse) {
+//           return cachedResponse;
+//         }
+
+//         return caches.open(RUNTIME).then(cache => {
+//           return fetch(event.request).then(response => {
+//             // Put a copy of the response in the runtime cache.
+//             return cache.put(event.request, response.clone()).then(() => {
+//               return response;
+//             });
+//           });
+//         });
+//       })
+//     );
+//   }
+// });
+
   self.addEventListener('fetch', function (e) {
     console.log("fetch! ", e.request);
+
     e.respondWith(
       caches
         .match(e.request)
@@ -117,7 +143,24 @@ self.addEventListener('activate', event => {
             console.log(error)
           });
         })
-        .catch(console.log)
+      
     );
       // e.waitUntil(response);
   });
+
+
+  // self.addEventListener('fetch', function (e) {
+  //   console.log("fetch! ", e.request);
+  //   e.respondWith(
+  //     caches.open(cacheName).then(cache =>{
+  //       return cache.match(e.request).then((res) => {
+  //         return res || fetch(e.request).then(
+  //           (res) => {cache.put(e.request,res.clone());
+  //           return res}).catch()
+
+  //     });
+  //   })
+
+  //   );
+  //     // e.waitUntil(response);
+  // });
